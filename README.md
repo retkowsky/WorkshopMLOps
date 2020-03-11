@@ -1,0 +1,2 @@
+# WorkshopMLOps
+Workshop MLOps Azure
