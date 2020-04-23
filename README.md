@@ -1,5 +1,6 @@
 # WorkshopMLOps
 Workshop MLOps Azure
+<img src="https://github.com/retkowsky/images/blob/master/AzureMLservicebanniere.png?raw=true">
 
 Azure ML Service: https://azure.microsoft.com/en-us/services/machine-learning-service/
 
