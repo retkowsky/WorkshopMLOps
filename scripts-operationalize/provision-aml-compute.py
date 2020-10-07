@@ -48,10 +48,10 @@ except ComputeTargetException:
     print("....creating new compute target")
     
     amlComputeProvisioningConfig = AmlCompute.provisioning_configuration(vm_size = "STANDARD_D12_V2",
-                                                                min_nodes = 0, 
-                                                                max_nodes = 1)    
+                                                                min_nodes = 1, 
+                                                                max_nodes = 4)    
     amlCompute = ComputeTarget.create(amlWs, args.aml_compute_target, amlComputeProvisioningConfig)
-    amlCompute.wait_for_completion(show_output=True, min_node_count=None, timeout_in_minutes=20)
+    amlCompute.wait_for_completion(show_output=True, min_node_count=None, timeout_in_minutes=10)
     
 print('4.  Get compute reference or create new...END')
 print('')
